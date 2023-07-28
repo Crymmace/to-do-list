@@ -27,7 +27,7 @@ while True:
     match event:
         case "Add":
             todos = get_todos()
-            new_todo = values['todo'] + "\n"
+            new_todo = values['todo']
             todos.append(new_todo)
             write_todos(todos)
             window['todos'].update(values=todos)
@@ -42,6 +42,8 @@ while True:
                 todos[index] = new_todo
                 write_todos(todos)
                 window['todos'].update(values=todos)
+                time.sleep(0.5)
+                todos = get_todos()
             except IndexError:
                 gui.popup("Please select an item.", font=("Helvetica", 20))
 

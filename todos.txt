@@ -1,22 +1,5 @@
 fight a bear
-
-
-
-lose to bear
-
-
-
-dinner with self
-
-
-
-Testing from gui
-
-
-
-Test code
-
-Test code again
-
-
-
+dinner with self 1
+dinner with self 2
+Testing from gui 2
+Test code 2 things 2

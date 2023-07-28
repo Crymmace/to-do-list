@@ -8,4 +8,8 @@ def get_todos(filepath=FILEPATH):
 
 def write_todos(todo_arg, filepath=FILEPATH):
     with open(filepath, 'w') as file:
-        file.writelines(todo_arg)
+        todos = []
+        for todo in todo_arg:
+            todos.append(todo.replace("\n", "") + "\n")
+        file.writelines(todos)
+        file.close()
