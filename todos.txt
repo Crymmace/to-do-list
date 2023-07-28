@@ -1,8 +1,22 @@
 fight a bear
+
+
+
 lose to bear
+
+
+
 dinner with self
-walk the dog
-clean self
+
+
+
 Testing from gui
+
+
+
 Test code
+
 Test code again
+
+
+
