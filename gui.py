@@ -1,8 +1,14 @@
 from functions import get_todos, write_todos
 import PySimpleGUI as gui
 import time
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", "w"):
+        pass
 
 gui.theme("Black")
+
 clock = gui.Text("", key="clock")
 label = gui.Text("Type in a to-do")
 input_box = gui.InputText(tooltip="Enter todo", key="todo")
@@ -31,6 +37,8 @@ while True:
             todos.append(new_todo)
             write_todos(todos)
             window['todos'].update(values=todos)
+            time.sleep(0.5)
+            todos = get_todos()
 
         case "Edit":
             try:
